@@ -29,7 +29,7 @@ that how much he is likely to be in different stages and levels of the disease, 
 	The result in this mode, just a word showing the possible disease stage the user is in.
 
 # IMPORTANT NOTE:
-	The data and formulas that construct the diognosis algorythms of the application, are based on a Bachelor's degree
-	final thesis, of a friend of mine; Its the result of the researches and matlab calculations of him, and i,
-	dont know how much this data is valid.
-	The only purpose of this repo, for me, is just to show my android development skills, nothing else.
+The data and formulas that construct the diognosis algorythms of the application, are based on a Bachelor's degree
+final thesis, of a friend of mine; Its the result of the researches and matlab calculations of him, and i,
+dont know how much this data is valid.
+The only purpose of this repo, for me, is just to show my android development skills, nothing else.

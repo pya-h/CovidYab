@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">کووید یاب</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="main_fragment_label">کووید یاب</string>
+    <string name="health_quiz_fragment_label">تست سلامت</string>
+    <string name="next">بعدی</string>
+    <string name="previous">قبلی</string>
+    <string name="quiz_basic_questions_notice">لطفا سوالات پیش رو با دقت پاسخ دهید.</string>
+    <string name="physical_name_hint">نام</string>
+    <string name="physical_age_hint">سن</string>
+    <string name="physical_body_temperature_hint">دمای بدن</string>
+    <string name="quiz_unexpected_error">مشکل غیرمنتظره ای پیش آمد.</string>
+    <string name="quiz_wrong_number">لطفا مقادیر عددی صحیح برای مقدار سن و دما وارد کنید.</string>
+    <string name="quiz_provide_name">لطفا نام واقعی خود را وارد کنید.</string>
+    <string name="body_temperature_accepted_range">مقدار دمای بدن باید بین 20 الی 45 درجه باشد.</string>
+    <string name="age_accepted_range">سن فرد باید عددی بین 1 الی 250 سال باشد.</string>
+    <string name="answer_yes">بله</string>
+    <string name="answer_no">خیر</string>
+    <string name="quiz_question_headache">ایا احساس سردرد می کنید؟</string>
+    <string name="quiz_question_sore_throat">آیا گلو درد دارید؟</string>
+    <string name="quiz_question_dry_cough">تاکنون با سرفه خشک مواجه شده اید؟</string>
+    <string name="quiz_question_disease_background">آیا قبلا سابقه بیماری کرونا داشته اید؟</string>
+    <string name="quiz_question_shortness_of_breathe">آیا تنگی نفس دارید؟</string>
+    <string name="quiz_question_chest_distress">آیا با درد قفسه سینه مواجه شده اید؟</string>
+    <string name="quiz_yes_no_questions_notice">حال  به سوالات بعدی صرفا با بله یا خیر پاسخ دهید.</string>
+    <string name="severity_light">خفیف</string>
+    <string name="severity_normal">متوسط</string>
+    <string name="severity_sever">شدید</string>
+    <string name="probability_severeness">احتمال شدید</string>
+    <string name="probability_normality">احتمال متوسط</string>
+    <string name="probability_lightness">احتمال خفیف</string>
+    <string name="severity_uncertain">تشخیص نا مطمئن</string>
+    <string name="invalid_yes_no_question">سوال کنونی نامعتبر است. لطفا کوئیز را از نو آغاز کنید.</string>
+    <string name="fab_start_quiz">شروع کوئیز</string>
+    <string name="gender_male">مذکر</string>
+    <string name="gender_female">مونث</string>
+    <string name="gender_others">غیره</string>
+    <string name="label_gender">جنسیت</string>
+    <string name="disease_severity_label">شدت بیماری:</string>
+    <string name="label_age">سن</string>
+    <string name="label_body_temperature">دمای بدن</string>
+    <string name="headache_field">سردرد</string>
+    <string name="sore_throat_field">گلودرد</string>
+    <string name="dry_cough_field">سرفه خشک</string>
+    <string name="disease_background_field">سابقه بیماری</string>
+    <string name="outcome_shortness_of_breath_field">تنگی نفس</string>
+    <string name="chest_distress_field">درد قسه سینه</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="tree_quiz_fragment_label">تست سلامت درختی</string>
+    <string name="answer_ok">ثبت</string>
+    <string name="answer_otherwise">در غیر این صورت</string>
+    <string name="welcome_text">به اپلیکیشن کرونا یاب خوش آمدید.
+        \n\n
+        برای آغاز تست در قالب عادی، روی دکمه ی معلق سمت چپ کلیک کنید.
+        \n\n
+        همچنین می تواند تست خود را در محیط درختی، با کلیک روی دکمه ی سمت راست انجام دهید.
+        \n\n
+        جهت گرفتن نتایج قابل اطمینان لطفا اطلاعات خود را به دقت و به درستی وارد کنید.
+    </string>
+</resources>

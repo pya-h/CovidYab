@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/yes_or_no_questions_text_size"
+        android:layout_margin="@dimen/normal_margin"
+        android:padding="@dimen/normal_padding"
+        android:background="@drawable/shape_outcome_group"
+        android:text="@string/welcome_text"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_quiz_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:contentDescription="@string/fab_start_quiz"
+        app:srcCompat="@drawable/ic_add_patient"
+        tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/start_tree_quiz_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:contentDescription="@string/fab_start_quiz"
+        app:srcCompat="@drawable/ic_tree_quiz"
+        tools:ignore="ImageContrastCheck" />
+</android.support.design.widget.CoordinatorLayout>

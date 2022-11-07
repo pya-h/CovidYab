@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quiz_questions">
+        <item>@string/label_gender</item>
+        <item>@string/label_age</item>
+        <item>@string/label_body_temperature</item>
+        <item>@string/quiz_question_headache</item>
+        <item>@string/quiz_question_sore_throat</item>
+        <item>@string/quiz_question_dry_cough</item>
+        <item>@string/quiz_question_disease_background</item>
+        <item>@string/quiz_question_shortness_of_breathe</item>
+        <item>@string/quiz_question_chest_distress</item>
+    </string-array>
+
+    <string-array name="symptom_fields">
+        <item>@string/label_gender</item>
+        <item>@string/label_age</item>
+        <item>@string/label_body_temperature</item>
+        <item>@string/headache_field</item>
+        <item>@string/sore_throat_field</item>
+        <item>@string/dry_cough_field</item>
+        <item>@string/disease_background_field</item>
+        <item>@string/outcome_shortness_of_breath_field</item>
+        <item>@string/chest_distress_field</item>
+    </string-array>
+
+    <string-array name="severities">
+        <item>@string/severity_light</item>
+        <item>@string/severity_normal</item>
+        <item>@string/severity_sever</item>
+        <item>@string/severity_uncertain</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+        <item>@string/gender_others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/light_dark_gray"
+        app:cardCornerRadius="@dimen/normal_border_radius"
+        app:cardElevation="@dimen/quiz_card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/outcome_container_padding"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:background="@drawable/shape_outcome_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/disease_severity_label"
+                            android:padding="@dimen/normal_padding"
+                            android:textStyle="bold"
+                            android:textColor="@color/design_default_color_primary" />
+
+                        <Button
+                            android:id="@+id/outcome_disease_severity_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/design_default_color_primary"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:background="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/probability_lightness"
+                            android:padding="@dimen/normal_padding"
+
+                            android:textColor="#616161" />
+
+                        <Button
+                            android:id="@+id/outcome_lightness_probability_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/probability_normality"
+                            android:padding="@dimen/normal_padding"
+
+                            android:textColor="#616161" />
+
+                        <Button
+                            android:id="@+id/outcome_normality_probability_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_orange_dark"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:text="@string/probability_severeness"
+                            android:padding="@dimen/normal_padding"
+                            android:textColor="#616161" />
+
+                        <Button
+                            android:id="@+id/outcome_severeness_probability_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:background="@drawable/shape_outcome_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="@dimen/normal_padding"
+                            android:text="@string/label_age"
+                            android:textColor="#455A64" />
+                        <Button
+                            android:id="@+id/outcome_age_text_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/design_default_color_primary"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="@dimen/normal_padding"
+                            android:text="@string/label_gender"
+                            android:textColor="#455A64" />
+
+                        <Button
+                            android:id="@+id/outcome_gender_text_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/design_default_color_primary"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start"
+                            android:padding="@dimen/normal_padding"
+                            android:text="@string/label_body_temperature"
+                            android:textColor="#455A64" />
+
+                        <Button
+                            android:id="@+id/outcome_body_temperature_text_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/design_default_color_primary"
+                            android:textSize="@dimen/yes_or_no_questions_text_size"
+                            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/normal_margin"
+                        android:layout_marginBottom="@dimen/normal_margin"
+                        android:background="@android:color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/outcome_headache_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/headache_field"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+                            app:backgroundTint="@color/selection_state_color"
+
+                            android:textColor="@color/black" />
+                        <Button
+                            android:id="@+id/outcome_sore_throat_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            app:backgroundTint="@color/selection_state_color"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/sore_throat_field"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/outcome_dry_cough_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/dry_cough_field"
+                            app:backgroundTint="@color/selection_state_color"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+
+                            android:textColor="@color/black" />
+                        <Button
+                            android:id="@+id/outcome_disease_background_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            app:backgroundTint="@color/selection_state_color"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/disease_background_field"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/small_margin"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/outcome_shortness_of_breath_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            app:backgroundTint="@color/selection_state_color"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/outcome_shortness_of_breath_field"
+                            android:textColor="@color/black" />
+                        <Button
+                            android:id="@+id/outcome_chest_distress_field"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/button_field_height"
+                            app:backgroundTint="@color/selection_state_color"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/chest_distress_field"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/start_quiz_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/fab_start_quiz"
+            app:srcCompat="@drawable/ic_add_patient"
+            tools:ignore="ImageContrastCheck" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/start_tree_quiz_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_tree_quiz"
+            android:contentDescription="@string/fab_start_quiz" />
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

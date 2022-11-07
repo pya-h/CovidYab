@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">CovidYab</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="main_fragment_label">COVID Yab</string>
+    <string name="health_quiz_fragment_label">Health Quiz</string>
+    <string name="tree_quiz_fragment_label">Tree Health Quiz</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="quiz_basic_questions_notice">Please answer the following questions accurately.</string>
+    <string name="quiz_yes_no_questions_notice">And now answer these questions with a simple yes or no</string>
+    <string name="fab_start_quiz">Start quiz</string>
+    <string name="physical_age_hint">Age</string>
+    <string name="physical_body_temperature_hint">Body Temperature (˚C)</string>
+    <string name="physical_name_hint">Name</string>
+    <string name="quiz_unexpected_error">Something unexpected happened.</string>
+    <string name="quiz_provide_name">Please provide an actual name.</string>
+    <string name="quiz_wrong_number">Please provide a valid number for Age and Temperature values</string>
+    <string name="body_temperature_accepted_range">Body temperature must be a float between 36 and 40 degrees</string>
+    <string name="age_accepted_range">Age must be a number between 1 and 250 years</string>
+    <string name="invalid_yes_no_question">Current question seems to be invalid. please restart the quiz.</string>
+    <string name="answer_yes">Yes</string>
+    <string name="answer_no">No</string>
+    <string name="answer_otherwise">Otherwise</string>
+    <!-- quiz questions -->
+    <string name="quiz_question_headache">Do you have headache?</string>
+    <string name="quiz_question_sore_throat">Do you have sore throat?</string>
+    <string name="quiz_question_dry_cough">have you experienced any dry coughs?</string>
+    <string name="quiz_question_disease_background">Have you been infected by COVID before?</string>
+    <string name="quiz_question_shortness_of_breathe">Do you have trouble breathing?</string>
+    <string name="quiz_question_chest_distress">Do you have chest distress?</string>
+
+    <string name="severity_sever">Severe</string>
+    <string name="severity_normal">Normal</string>
+    <string name="severity_light">Light</string>
+    <string name="severity_uncertain">Uncertain Diagnosis</string>
+
+    <string name="probability_severeness">Severeness</string>
+    <string name="probability_normality">Normality</string>
+    <string name="probability_lightness">Lightness</string>
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_others">Others</string>
+    <string name="label_gender">Gender:</string>
+    <string name="disease_severity_label">Disease Severity:</string>
+    <string name="label_age">Age</string>
+    <string name="label_body_temperature">Body Temperature</string>
+    <string name="headache_field">Headache</string>
+    <string name="sore_throat_field">Sore Throat</string>
+    <string name="dry_cough_field">Dry Cough</string>
+    <string name="disease_background_field">Disease Background</string>
+    <string name="outcome_shortness_of_breath_field">Shortness of breath</string>
+    <string name="chest_distress_field">Chest Distress</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="answer_ok">OK</string>
+    <string name="welcome_text">Welcome to COVID Yab Application.\n\n
+        \tTo start casual health quiz, press the floating button on the right.\n\n
+        \tYou can also do the quiz in tree like environment, by pressing on the left floating button. \n\n
+        \tIn order to get a reliable answer please consider entering the correct and accurate values in the quiz.
+    </string>
+
+</resources>

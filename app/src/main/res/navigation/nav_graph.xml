@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.thcplusplus.covidyab.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_mainFragment_to_healthQuizFragment"
+            app:destination="@id/healthQuizFragment"
+            app:enterAnim="@anim/pull_left_to_origin_animation"
+            app:exitAnim="@anim/pull_origin_to_left_animation"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/pull_left_to_origin_animation"
+            app:popExitAnim="@anim/pull_origin_to_left_animation"
+            app:popUpTo="@id/healthQuizFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_treeQuizFragment"
+            app:destination="@id/treeQuizFragment"
+            app:popUpTo="@id/treeQuizFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:enterAnim="@anim/pull_right_to_origin_animation"
+            app:exitAnim="@anim/pull_origin_to_right_animation"
+            app:popEnterAnim="@anim/pull_right_to_origin_animation"
+            app:popExitAnim="@anim/pull_origin_to_right_animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthQuizFragment"
+        android:name="com.thcplusplus.covidyab.HealthQuizFragment"
+        android:label="@string/health_quiz_fragment_label"
+        tools:layout="@layout/fragment_health_quiz">
+        <action
+            android:id="@+id/action_healthQuizFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/pull_left_to_origin_animation"
+            app:exitAnim="@anim/pull_origin_to_left_animation"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/pull_origin_to_left_animation"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/treeQuizFragment"
+        android:name="com.thcplusplus.covidyab.TreeQuizFragment"
+        android:label="@string/tree_quiz_fragment_label"
+        tools:layout="@layout/fragment_tree_quiz">
+        <action
+            android:id="@+id/action_treeQuizFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/pull_right_to_origin_animation"
+            app:exitAnim="@anim/pull_origin_to_right_animation"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/pull_right_to_origin_animation"
+            app:popExitAnim="@anim/pull_origin_to_right_animation"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
